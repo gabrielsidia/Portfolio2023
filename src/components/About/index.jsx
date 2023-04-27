@@ -76,7 +76,7 @@ export const PictureProfile = styled.div `
     }
 
     @media (max-width: 790px) {
-      width: 15rem;
+      width: 17rem;
       height: 20rem;
       margin-left: 6rem;
       
