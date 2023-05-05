@@ -50,7 +50,9 @@ const Container = styled.div `
     margin:0 auto;
     padding:3rem 0;
     @media (max-width: 840px) {
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   
     h2{
@@ -70,5 +72,12 @@ const Cards = styled.div`
     display:flex;
     grid-template: repeat(auto-fit, minimax(250px, 1fr));
     margin-top:4rem;
-    gap: 1remq;
+    gap: 1rem;
+
+    @media(max-width:760px) {
+      display: flex;
+      flex-direction:column ;
+      align-items: center;
+      margin-left: 3rem;
+    }
 `

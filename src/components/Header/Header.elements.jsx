@@ -11,7 +11,7 @@ background-color: #191923;
 animation: header 500ms ease-in-out;
 padding: 1.5rem;
   @media(max-width:820px) {
-  width: 90%;
+  width: 100%;
 }
 .bars {
   display: none;
@@ -65,6 +65,11 @@ h1{
     color: #01be96;
     transition: 1.2s;
 }
+@media(max-width: 700px){
+    display: flex;
+    justify-content: flex-start;
+}
+
 }  
 `
 export const Nav = styled.div `

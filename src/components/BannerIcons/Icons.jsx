@@ -4,9 +4,9 @@ import styled from 'styled-components'
 const Icons = (props) => {
     const {Icon, link} = props
   return (
-      <div className='social-icons'>
+      <DivIcones >
                 <h2><TitleIcon href={link} target='_blank'><Icon/></TitleIcon></h2>
-        </div>
+        </DivIcones>
     
   )
 }
@@ -24,4 +24,11 @@ export const TitleIcon = styled.a`
         color:white;
         transition:0.8s;
     }
+    @media (max-width: 760px) {
+        font-size: 22px;
+        display: flex;
+    }
+`
+export const DivIcones = styled.div `
+    
 `

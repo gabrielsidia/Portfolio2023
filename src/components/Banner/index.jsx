@@ -14,7 +14,7 @@ import { Slide } from 'react-awesome-reveal'
 const Banner = () => {
   return (
     <Container>
-     <Slide direction='left'>
+     {/**<Slide direction='left'>*/}
         <Texts>
             <h3>Olá,<span className='green'> me chamo:</span> </h3>
             <h1>Gabriel Maia</h1>
@@ -44,7 +44,7 @@ const Banner = () => {
                 <IconsMedia Icon={SiVercel}></IconsMedia>
             </ListMedia>
         </Texts>
-     </Slide>
+     {/**</Slide>*/}
         <Slide direction='right'>
             <Image>
                 <img src={imagem} alt="imagem" />
@@ -57,58 +57,60 @@ const Banner = () => {
 export default Banner
 
 export const Container = styled.div `
-    
+    max-width: 1280px;
     display:flex;
-    gap:1rem;
+    gap:2rem;
     justify-content:space-between;
-    padding:0.3rem 10rem 5rem 2rem;
     align-items:center;
     margin: 0 auto;
     z-index: 1;
     @media (max-width: 840px) {
-    width: 90%;
-  }
-  @media (max-width: 640px) {
-    flex-direction: column;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
   }
   
 `
 export const Texts = styled.div`
-
-@media (max-width: 690px) {
-      font-size: 0.7rem;
+    flex: 1;
+@media (max-width: 760px) {
+      box-sizing: border-box;
+      max-width: 21rem;
+      padding-top: 12px;
     }
    
-    margin-left:10rem;
+    
     h4 {
-        padding:1.5rem 0.2rem;
+        padding:1rem 0.2rem;
         font-weight:500;
         font-size:1rem;
     }
     h1 {
-        font-size:2.5rem;
+        font-size:2rem;
         letter-spacing:2px;
         color:#01be96;
         
     } h3 {
         font-weight:500;
-        font-size:1.8rem;
+        font-size:1.2rem;
         text-transform:capitalize;
         padding-bottom:1rem
         
     }
     p {
-        font-weight:400
+        font-weight:400;
+       
     }
     button {
-        padding: 0.9rem 2rem;
+        padding: 0.7rem 2rem;
         cursor:pointer;
         margin-top:3rem;
         margin-left:3rem;
         background-color:#01be96;
         border:none;
         border-radius:8px;
-        font-weight:600;
+        font-weight:500;
         color:white;
         font-size:1rem;
         filter: drop-shadow(0px 10px 10px #01be9551);
@@ -120,7 +122,7 @@ export const Texts = styled.div`
    
         }
         @media(max-width:840px) {
-            margin-left: 7.7rem;
+                margin-left:5rem;
         }
     }
 `
@@ -134,8 +136,9 @@ export const Image = styled.div `
     } :hover img{
         transform: translateY(-15px);
     }
-    @media (max-width: 790px) {
+    @media (max-width: 820px) {
       width: 20rem;
+      display: none;
       
     }
     @media (max-width: 660px) {
@@ -152,12 +155,21 @@ export const ListIcons = styled.ul`
     align-items:center;
     gap:12px;
     
+    @media (max-width: 760px) {
+       
+    }
 `
 export const ListMedia = styled.ul`
     margin-top:20px;
     display:flex;
+    padding-top: 12px;
     align-items:center;
     gap:12px;
+    @media (max-width: 760px) {
+       gap: 0px;
+       padding-top:2px;
+       padding-right: 12px;
+    }
 `
 
 

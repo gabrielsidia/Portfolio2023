@@ -23,6 +23,9 @@ export const Span = styled.h2 `
 export const TitleIcon = styled.a`
     color:#C0C0C0;
     font-size:25px;
+    @media (max-width: 660px) {
+      font-size: 22px;
+    }
     
 
     :hover {

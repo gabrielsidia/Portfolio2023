@@ -54,6 +54,9 @@ export const Title = styled.div `
     transition:1.2s;
     
   }
+  @media(max-width:700px) {
+    padding-top: 18px;
+  }
 `
 
 export const PictureProfile = styled.div `
@@ -75,11 +78,10 @@ export const PictureProfile = styled.div `
       color:#01be96;
     }
 
-    @media (max-width: 790px) {
-      width: 17rem;
+    @media (max-width: 760px) {
+      width: 16rem;
       height: 20rem;
-      margin-left: 6rem;
-      
+      margin-left:2.5rem; 
     }
 
   }
