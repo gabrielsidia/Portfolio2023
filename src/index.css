@@ -4,7 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
+
 }
 :root {
   --lighter: linear-gradient(159deg, rgb(45,45,58) 0%, rgb(43,43,53) 100%);
@@ -15,6 +16,9 @@ body {
   width: 100%;
   background-color: var(--background);
   color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .slick-list, .slick-slider, .slick-track {
   padding:1.2rem 0;
