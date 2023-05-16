@@ -17,11 +17,11 @@ const About = () => {
                 <img src={fotoo} alt="" />
           </div>
           <div className="text">
-            <Zoom>
+            {/* <Zoom> */}
               <p >😃 Olá, me chamo Gabriel Maia e sou estudante de Desenvolvimento de Software, com conhecimentos em: <Verde>HTML, CSS, Bootstrap, JavaScript, TypeScript,
                 React.js, Next.js, NodeJS, SQL, Git</Verde> e atualmente estou estudando <Verde>Node e <Verde></Verde>Testes Automatizados</Verde>. Tenho inglês avançado e estou aprimorando a conversacao, e curso Análise e Desenvolvimento de Sistemas pela Universidade Estácio estando no 3 período.
               👉 Me considero uma pessoa esforçada, ágil e persistente em tudo aquilo que vou fazer. Sempre procuro aprimorar meus conhecimentos e gosto de desafios e de poder aprender coisas novas. </p>
-              </Zoom>
+              {/* </Zoom> */}
           </div>
       </PictureProfile>
     </Container>
@@ -41,8 +41,6 @@ export const Container = styled.div `
     width:80%;
     max-width:1280px;
     margin:0 auto;
-   
-  
 `
 export const Title = styled.div `
   padding:0rem 0 4rem 0;
@@ -62,8 +60,9 @@ export const Title = styled.div `
 export const PictureProfile = styled.div `
   width:100%;
   display:flex; 
-  justify-content:space-between;
+  /* justify-content:space-between; */
   padding-bottom:2rem;
+  
   .img  img{
     padding-bottom: 2rem;
     width:470px;
@@ -81,21 +80,30 @@ export const PictureProfile = styled.div `
     @media (max-width: 760px) {
       width: 16rem;
       height: 20rem;
-      margin-left:2.5rem; 
+      margin-left:3rem;   
     }
-
   }
+  .img {
+    @media (max-width: 760px) {
+      margin-left:0rem;   
+    }
+  }
+
   .text {
-    width:50%;
+   justify-content: center;
+    align-items: center;
     padding-top:3.5rem;
     font-size:18px;
     letter-spacing:0.1rem;
-    line-height:1.6rem;
+    line-height:1.8rem;
+    padding-left: 3rem;
+    
 
     @media (max-width: 790px) {
       margin-top: 17rem;
       width: 100%;
       margin-left: -20rem;
+      padding-left: 2rem;
     }
   }
 `  

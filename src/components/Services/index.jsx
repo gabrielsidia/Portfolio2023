@@ -15,27 +15,22 @@ const Services = () => {
     <Container>
       
       <Cards>
-        <Slide direction='left'>
-          <Card  
+            <Card  
               Icon={CgWebsite}
               title='Front End'
               desc = 'Desenvolvedor Front End, utilizando React.js, Typescript, JavaScript e Node como tecnologias para desenvolvimento'
           />
-        </Slide>
-        <Slide direction='up'>
-          <Card
+                <Card
               Icon={FiCodesandbox}
               title='Back End'
               desc = 'Desenvolvimento Back End, com a utilização de Node e Express para a construção de APIs, junto com banco de dados relacionais e não relacionais.'
           />
-        </Slide>
-        <Slide direction='right'>
+        
           <Card
             Icon={MdDesignServices}
             title='Web Designer'
             desc = {`Criação de sites e landing pages, com a utilizacao de Wordpress e Elementor, com funcionalidades criadas com PHP e CSS`}
         />
-        </Slide>
       </Cards>
     </Container>
     </>
@@ -48,11 +43,12 @@ const Container = styled.div `
     width:100%;
     max-width:1280px;
     margin:0 auto;
-    padding:3rem 0;
+    padding:2rem 0;
     @media (max-width: 840px) {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow-x:hidden;
   }
   
     h2{
